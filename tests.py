@@ -13,7 +13,7 @@ my_format = "{:.0%}"
 eval_models = True
 print_summary = True
 print_test_movies = True
-crop_results = 3
+crop_results = 7
 
 
 class TransferModel:
@@ -112,25 +112,27 @@ def main():
 
         test_movies = dict()
 
-        test_movies['Comedy'] = ["Bienvenue chez les Ch'tis", "Frequently Asked Questions About Time Travel",
-                                 "What We Do in the Shadows", "Hollywood Ending", "Whatever Works", "The Mask",
-                                 "Liar Liar"]
+        # test_movies['Comedy'] = ["Bienvenue chez les Ch'tis", "Frequently Asked Questions About Time Travel",
+        #                          "What We Do in the Shadows", "Hollywood Ending", "Whatever Works", "The Mask",
+        #                          "Liar Liar"]
+        # #
+        # test_movies['Drama'] = ["No Country for Old Men", "The Martian", "Vanilla Sky"]
+        #
+        # test_movies['Action'] = ["The Matrix", "Man of Steel", "X-Men: Apocalypse", "Lara Croft: Tomb Raider",
+        #                          "Edge of Tomorrow", "Batman Forever", "Live Free or Die Hard"]
+        #
+        # test_movies['Horror'] = ["Dracula 2000", "The Blair Witch Project", "The Others", "Aliens",
+        #                          "Aliens vs. Predator: Requiem", "Alien: Resurrection"]
+        #
+        # test_movies['Animation'] = ["Paprika", "Castle in the Sky", "Spirited Away", "Zootopia", "Trolls"]
+        #
+        # test_movies['Romance'] = ["Notting Hill", "Pretty Woman", "Bridget Jones's Diary"]
+        #
+        # test_movies['?'] = ["Pearl Harbor", "Twelve Monkeys", "The Truman Show",
+        #                     "Star Wars: Episode IV - A New Hope", "The Godfather", "A.I. Artificial Intelligence",
+        #                     "Enter the Void", "The Abyss", "Primer", "Coherence", "Pulp Fiction"]
 
-        test_movies['Drama'] = ["No Country for Old Men", "The Martian", "Vanilla Sky"]
-
-        test_movies['Action'] = ["The Matrix", "Man of Steel", "X-Men: Apocalypse", "Lara Croft: Tomb Raider",
-                                 "Edge of Tomorrow", "Batman Forever", "Live Free or Die Hard"]
-
-        test_movies['Horror'] = ["Dracula 2000", "The Blair Witch Project", "The Others", "Aliens",
-                                 "Aliens vs. Predator: Requiem", "Alien: Resurrection"]
-
-        test_movies['Animation'] = ["Paprika", "Castle in the Sky", "Spirited Away", "Zootopia", "Trolls"]
-
-        test_movies['Romance'] = ["Notting Hill", "Pretty Woman", "Bridget Jones's Diary"]
-
-        test_movies['?'] = ["Pearl Harbor", "Twelve Monkeys", "The Truman Show", "Blade Runner",
-                            "Star Wars: Episode IV - A New Hope", "The Godfather", "A.I. Artificial Intelligence",
-                            "Enter the Void", "The Abyss", "Primer", "Coherence", "Pulp Fiction"]
+        test_movies['?'] = ["Batman: Return of the Caped Crusaders", "Bleed", "My Life as a Zucchini", "The Martian", "The Hateful Eight", "Captain America: Civil War"]
 
         if print_test_movies:
             print()
